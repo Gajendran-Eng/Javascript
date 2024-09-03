@@ -1,0 +1,76 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+}
+body{
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-areas: 
+  'nav nav nav'
+  'header header header'
+  'aside main main'
+  'aside1 aside2 aside3'
+  'footer footer footer';
+  grid-template-rows: 50px 100px 1fr 150px 50px;
+  grid-template-columns: 100px 1fr 1fr;
+}
+  #nav,
+  #header,
+  #sidebar,
+  #main,
+  #aside1,
+  #aside2,
+  #aside3,
+  #footer {
+    padding: 20px;
+    text-align: center;
+    text-decoration: oklab(lightness a b);
+
+    
+}
+
+ #nav {
+  grid-area: nav;
+  background-color: blanchedalmond;
+  border: 3pt groove ;
+
+}
+#header {
+  grid-area: header;
+  background-color: rgb(244, 171, 235);
+  border: 3pt groove ;
+
+}
+#sidebar {
+  grid-area: aside;
+  background-color: rgb(118, 110, 117);
+  border: 3pt groove ;
+}
+
+#main {
+  grid-area: main;
+  background-color: rgb(145, 200, 242);
+  border: 3pt groove ;
+}
+#aside1 {
+  grid-area: aside1;
+  background-color: rgb(244, 207, 153);
+  border: 3pt groove ;
+}
+#aside2 {
+  grid-area: aside2;
+  background-color: rgb(156, 244, 136);
+  border: 3pt groove ;
+}
+#aside3{
+  grid-area: aside3;
+  background-color: rgb(122, 128, 121);
+  border: 3pt groove ;
+}
+#footer{
+  grid-area: footer;  
+  background-color: rgb(81, 83, 81);
+  border: 3pt groove ;
+}

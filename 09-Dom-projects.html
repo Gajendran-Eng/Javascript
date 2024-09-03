@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <ti-tle>DOM Projects</title>
+  </head>
+  <body>
+    <p>YoyTube Subscribe Button</p>
+    <button onclick=" 
+      youtube();
+      
+    " class="js-sub">Subscribe</button>
+    <script>
+      function youtube(){
+        const buttElement = document.querySelector('.js-sub');
+        
+        if(buttElement.innerText === 'Subscribe')
+          {
+            buttElement.innerHTML = 'Subscribed';
+          } else{
+            buttElement.innerHTML = 'Subscribe';
+          }
+        }
+      
+    </script>
+  </body>
+</html>

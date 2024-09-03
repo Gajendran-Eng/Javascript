@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Coin-Flip</title>
+  </head>
+  <body>
+    <button onclick="
+
+      console.log(randomnumberpicker());
+     
+      if (computerMove === 'Heads')
+      {
+        result = 'You Win';
+      } else if (computerMove === 'Tails'){
+        result = 'better Luck Next time';
+      }
+
+      alert(`You picked Heads. computer picked ${computerMove}. ${result}`);  console.log(result);">Heads</button>
+    <button onclick="
+    console.log(randomnumberpicker());
+
+    if (computerMove === 'Tails'){
+      result = 'You Win';
+    } else if (computerMove === 'Heads'){
+      result = 'better Luck Next time';
+    }
+    
+    alert(`You picked Tails. computer picked ${computerMove}. ${result}`);  console.log(result);">Tails</button>
+    <script>
+      let computerMove ='';
+      let result = '';
+      function randomnumberpicker (){
+      const randomnumber = Math.random();
+      if (randomnumber >= 0 && randomnumber < 2/3){
+          computerMove ='Heads';
+      }else (randomnumber >= 2/3 && randomnumber < 1) 
+      {
+          computerMove ='Tails';
+      }
+
+      return 'Coin fliped'
+      }
+      
+    </script>
+  </body>
+</html>

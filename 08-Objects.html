@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Objects</title>
+  </head>
+  <body>
+    <script>
+      const product = {
+        Name : 'Gajendran V',
+        Age : 26,
+        DOB : '17-12-1997'
+      }
+
+      console.log(product);
+
+      // variablename Objectname = { property : value} called oject 
+
+      // To add property in existing object use given method objectname.propertyname example : product.address;
+
+      product.address = 'XYZ';
+      console.log(product);
+
+      // To modify the property values use the given method objectname.propertyname = value; example : product.Name= 'Nithya';
+      product.Name= 'Nithya';
+
+      console.log(product);
+
+      // To delete existing property in object use the given method  delete objectname.propertyname;
+
+      delete product.address;
+      console.log(product);
+
+      //In Object there is two type of notation one is dotNotation .propertyname and Bracket Notation ['PropertyName']
+
+      console.log(product.Name);
+      console.log(product['Name']);
+
+      // We can use Object inside Object 
+
+      const product2 = {
+        Name : 'Gajendran v',
+        Age : 26,
+        DOB : '17-12-1997',
+        Rating : { //object inside object(product2)
+             Stars : 4.5,
+             Count : 100,
+             fun: function Data() // function value inside object (Rating)
+             {
+              console.log("Good Job!");
+             }
+      }
+
+    }
+
+    console.log(JSON.stringify(product2));
+
+    const jsonstring = JSON.stringify(product2);
+
+    console.log(JSON.parse(jsonstring));
+
+
+
+
+
+
+
+
+
+    </script>
+  </body>
+</html>
